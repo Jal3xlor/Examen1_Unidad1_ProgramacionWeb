@@ -1,0 +1,106 @@
+.inicio-pag{
+    background-color: #fff;
+    color: #234464;
+    border-bottom: 1px #dcdfe4;
+}
+
+.logo-empresa{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.datos-emp{
+    font-size: 0.8rem;
+}
+
+.navegar .nav-link{
+    color: #242222;
+    font-weight: 500;
+    padding: 0.8rem 0.7rem;
+}
+
+.navegar .nav-link:hover, .navegacion  .nav-link:focus{
+    color: #97b9cc;
+}
+
+.btn-wsp{
+    background-color: #26c556;
+    border: 1px solid #26c556;
+    color: #dbd4d4;
+    font-weight: 400;
+    width: 9rem;
+}
+
+.btn-wsp:hover{
+    background-color: #cf8c48;
+    border-color: #cf8c48;
+    color: #fff;
+}
+
+.producto-cuadro{
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto-cuadro:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem rgba(0, 0, 0, 0.21);
+}
+.imagen-articulos{
+    width: 100%;
+    max-width: 280px;
+    height: 190px;
+    object-fit: contain;
+}
+
+.producto-cuadro .card-body{
+    margin-bottom: 0.5rem;
+}
+
+.precio-oferta{
+    color: #d63811;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#cotizaciones .card {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+#cotizaciones .form-label {
+    color: #263b53;
+}
+
+#cotizaciones .form-control,
+#cotizaciones .form-select {
+    border-color: #ced8e5;
+}
+
+#cotizaciones .form-control:focus,
+#cotizaciones .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+#cotizaciones .alert {
+    border-radius: 12px;
+}
+
+.resultado-total {
+    background-color: #edf4fc;
+}
+
+.total-precio {
+    color: #087f5b;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+#cotizaciones button {
+    font-weight: 600;
+}

@@ -4,255 +4,708 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>DEINSA HONDURAS | Pagina Principal</title>
-    
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="imagenes/logodeinsa.jpg" alt="Logo de la compañia" width="100">
-            <h1>DEINSA HONDURAS</h1>
-            <p>Distribuidora de suministros elctrónicos industriales</p>
+    <header id="inicio" class="inicio-pag">
+        <div class="container py-3">
+            <div class="row align-items-center g-3">
+                <div class="col-12 col-lg-7 d-flex align-items-center gap-3">
+                    <img src="imagenes/logodeinsa.jpg" alt="Logo de la compañia DEINSA HONDURAS" width="100" class="logo-empresa">
+                    <div>
+                        <h1 class="h1 mb-2">DEINSA HONDURAS</h1>
+                        <p class="mb-0">Distribuidora de suministros elctrónicos industriales</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 datos-emp">
+                    <p class="mb-2"><i class="bi bi-telephone-fill"></i><strong>Telefonos:</strong>+504 2556-7325 / +504 2556-9673</p>
+                    <p class="mb-2"><i class="bi bi-envelope-check"></i><strong>Correo Electronico:</strong> cotizaciones@distribuidoraindustrial.net</p>
+                    <p class="mb-0"><i class="bi bi-clock-fill"></i><strong>Horarios de Atención:</strong>Lunes a Viernes 8am-5pm / Sabados 8am-12pm</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p><strong>Telefonos:</strong>+504 2222-2220 & +504 2223-2221</p>
-            <p><strong>Horarios de Atención:</strong>Lunes a Viernes 8am-6pm</p>
-        </div>
-           
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#catalogo">Catalogo</a></li>
-            <li><a href="#ofertas">Ofertas</a></li>
-            <li><a href="#cotizaciones">Cotizaciones</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="wasa">Cotizar por Whatsapp</a></li>
+    <nav class="navegar sticky-top navbar navbar-expand-lg py-3 bg-light">
+        <div class="container">
+            <a href="#inicio" class="navbar-brand align-items-center fw-bold">DEINSA HONDURAS</a>
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav" aria-controls="menu-nav" aria-expanded="false" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       <div id="menu-nav" class="collapse navbar-collapse">
+         <ul class="navbar-nav ms-auto align-items-center ">
+            <li><a href="#inicio" class="nav-link px-3">Inicio</a></li>
+            <li><a href="#catalogo" class="nav-link px-3">Catalogo</a></li>
+            <li><a href="#ofertas" class="nav-link px-3">Ofertas</a></li>
+            <li><a href="#cotizaciones" class="nav-link px-3">Cotizaciones</a></li>
+            <li><a href="#contacto" class="nav-link px-3">Contacto</a></li>
+            <!--el telefono que me aparece de DIENSA es 3280-6129-->
+            <li><a href="https://wa.me/50432806129" class="btn-wsp px-3 btn "><i class="bi bi-whatsapp"></i>Cotizar por Whatsapp</a></li>
         </ul>
+        
+       </div>
     </nav>
     <main>
-        <!--seccion1 inicio-->
-        <section id="inicio">
-
+        <!--seccion1 bienvenida, solo porque le faltaba xd-->
+        <section class="bienvenida py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6">
+                        <span class="badge text-light mb-3 bg-dark px-3 ">DEINSA HONDURAS</span>
+                        <h2 class="display-4 fw-bold">Tecnología para impulsar ese proyecto que deseas</h2>
+                        <p class="lead">Encuentra todo lo que necesites en suministros electronicos industriales y sistemas de enegia solar para tu proycto </p>
+                        <p>Explora nuestro catalogo y solicit una cotizacion</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#catalogo" class="btn btn-primary btn-lg text-dark">Explorar catalogo</a>
+                            <a href="#licitacion" class="btn btn-outline-primary btn-lg text-dark">Solicitar Licitacion</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="imagenes/equiposindustriales.jpg" alt="equipos industriales utilizados en DEINSA HONDURAS" class="img-fluid rounded-4">
+                    </div>
+                </div>
+            </div>
         </section>
+
 
         <!--seccion2 catalogo de productos-->
         <section id="catalogo">
-            <h2>Catalogo de Productos</h2>
-            <p>Puedes encontrar los siguientes productos</p>
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge text-primary mb-2">NUESTRO CATALOGO</span>
+                    <h2 class="display-6 fw-bold">Catalogo de Productos</h2>
+                    <p class="text-secondary">Puedes encontrar los siguientes productos</p>
+                     
+                    <div class="row g-4">
+                        <!--Articulo 1-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo1.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo 1</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
 
-            <!--Articulo 1-->
-            <article>
-                <span>Articulo 1</span>
-                <figure>
-                    <img src="imagenes/mouse.jpg" alt="articulo1">
-                    <figcaption>Destornillador</figcaption>
-                </figure>
-                <h3><strong>Producto:</strong>Destornillador phillips</h3>
-                <p><strong>Categoria:</strong>Herramienta</p>
-                <p><strong>Precio:</strong>L 120.00</p>
-                <p><strong>Tension Nominal:</strong>13800 v</p>
-                <p><strong>Capacidad:</strong>150 kva</p>
-                <p><strong>Garantia:</strong>1 dia</p>
-                <p><strong>Marca:</strong>Phillips</p>
-                <button type="button">Agregar al carrito</button>
-            </article>
+                        <!--Articulo 2-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo2.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo 2</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 3-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo3.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo 3</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 4-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo4.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo 4</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 5-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo5.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo 5</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 6-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo6.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo6</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 7-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo7.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo 7</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 8-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo1.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 9-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 10-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 11-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 12-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 13-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!--Articulo 14-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                    <!--Articulo 15-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-secondary aling-self-start m-3">Articulo 1</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio:</strong>L 120.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+
+                </div>
+            </div>
 
 
         </section>
 
         <!--seccion3 ofertas-->
-         <section id="ofertas">
-                <h3>OFERTAS ESPECIALES y Liquidacion</h3>
+         <section id="ofertas" class="py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-3">OFERTAS ESPECIALES y Liquidacion</h2>
+                <p class="text-center text-secondary mb-5">Aprovecha de precios especiales.</p>
 
-                <article>
-                <span>OFERTA!!!!</span>
-                <figure>
-                    <img src="imagenes/mouse.jpg" alt="articulo1">
-                    <figcaption>Destornillador en oferta</figcaption>
-                </figure>
-                <h3><strong>Producto:</strong>Destornillador phillips</h3>
-                <p><strong>Categoria:</strong>Herramienta</p>
-                <p><strong>Precio anterior:</strong><s>L 120.00</s></p>
-                <p><strong>Precio Oferta:</strong>L 110.00</p>
-                <p><strong>Tension Nominal:</strong>13800 v</p>
-                <p><strong>Capacidad:</strong>150 kva</p>
-                <p><strong>Garantia:</strong>1 dia</p>
-                <p><strong>Marca:</strong>Phillips</p>
-                <button type="button">Agregar al carrito</button>
-            </article>
+                <div class="row g-4">
 
-            <article>
-                <span>Liquidacion!!!!</span>
-                <figure>
-                    <img src="imagenes/mouse.jpg" alt="articulo1">
-                    <figcaption>Destornillador en oferta</figcaption>
-                </figure>
-                <h3><strong>Producto:</strong>Destornillador phillips</h3>
-                <p><strong>Categoria:</strong>Herramienta</p>
-                <p><strong>Precio anterior:</strong><s>L 120.00</s></p>
-                <p><strong>Precio Oferta:</strong>L 110.00</p>
-                <p><strong>Tension Nominal:</strong>13800 v</p>
-                <p><strong>Capacidad:</strong>150 kva</p>
-                <p><strong>Garantia:</strong>1 dia</p>
-                <p><strong>Marca:</strong>Phillips</p>
-                <button type="button">Agregar al carrito</button>
-            </article>
+                    <!--articulo en oferta1-->
+                    <div class="row g-4">
+                        <!--Articulo 1-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-warning aling-self-start m-3">OFERTA!!!!!</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/mouse.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">Destornillador</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio anterior:</strong><s class="text-secondary">L. 120.00</s></p>
+                                    <p><strong>Precio e oferta</strong></p>
+                                    <p class="precio-oferta">L. 110.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
 
+                        <!--Articulo 2-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-warning aling-self-start m-3">OFERTA!!!!!</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo1.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo1</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio anterior:</strong><s class="text-secondary">L. 120.00</s></p>
+                                    <p><strong>Precio e oferta</strong></p>
+                                    <p class="precio-oferta">L. 110.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 3-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-warning aling-self-start m-3">OFERTA!!!!!</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo2.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo2</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio anterior:</strong><s class="text-secondary">L. 120.00</s></p>
+                                    <p><strong>Precio e oferta</strong></p>
+                                    <p class="precio-oferta">L. 110.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 4-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-warning aling-self-start m-3">OFERTA!!!!!</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo3.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo 3</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio anterior:</strong><s class="text-secondary">L. 120.00</s></p>
+                                    <p><strong>Precio e oferta</strong></p>
+                                    <p class="precio-oferta">L. 110.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Articulo 5-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <article class="producto-cuadro card h-100 shadow-lg">
+                                <span class="badge text-warning aling-self-start m-3">OFERTA!!!!!</span>
+                                <figure class="text-center px-3">
+                                    <img src="imagenes/articulo4.jpg" alt="articulo1" class="img-fluid imagen-articulos">
+                                    <figcaption class="text-secondary mt-2">articulo</figcaption>
+                                </figure>
+                                <div class="card-body">
+                                    <h3 class="h5 fw-bold"><strong>Producto:</strong>Destornillador phillips</h3>
+                                    <p><strong>Categoria:</strong>Herramienta</p>
+                                    <p><strong>Precio anterior:</strong><s class="text-secondary">L. 120.00</s></p>
+                                    <p><strong>Precio e oferta</strong></p>
+                                    <p class="precio-oferta">L. 110.00</p>
+                                    <p><strong>Tension Nominal:</strong>13800 v</p>
+                                    <p><strong>Capacidad:</strong>150 kva</p>
+                                    <p><strong>Garantia:</strong>1 dia</p>
+                                    <p><strong>Marca:</strong>Phillips</p>
+                                    <button type="button" class="btn btn-primary w-100"><i class="bi bi-cart-plus me-2"></i>Agregar al carrito</button>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+                
 
         </section>
         
-        <!--seccion4 cotizaciones-->
-         <section id="cotizaciones">
-            
-            <h2>CALCULADORA</h2>
-            <p>Ingrese la informacion requerida para revelar cuanto costara su compra :D</p>
-            
-            <form method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <legend>Cotizacion</legend>
+        <!-- Sección 4: cotizaciones -->
+        <section id="cotizaciones" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-primary mb-2">COTIZACIONES</span>
+                    <h2 class="display-6 fw-bold">CALCULADORA</h2>
+                    <p class="text-secondary">Ingrese la información requerida para revelar cuánto costará su compra :D</p>
+                </div>
 
-                    <div>
-                        <label for="cantidad">Ingrese la Cantidad de unidades para comprar</label>
-                        <input type="number" id="cantidad" name="cantidad" required min="1" placeholder="ej: 5">
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-12 col-lg-7">
+                        <form class="card shadow-sm border-0 h-100" method="post">
+                            <fieldset class="card-body p-4">
+                                <legend class="h3 fw-bold mb-4"><i class="bi bi-calculator text-primary me-2"></i>Cotización</legend>
+
+                                <div class="mb-4">
+                                    <label for="cantidad" class="form-label fw-semibold">Ingrese la cantidad de unidades para comprar</label>
+                                    <input class="form-control form-control-lg" type="number" id="cantidad" name="cantidad" required min="1" placeholder="Ej.: 5">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="equipo" class="form-label fw-semibold">Equipo industrial</label>
+                                    <select id="equipo" name="equipo" required class="form-select form-select-lg">
+                                        <option value="">Elija el equipo</option>
+                                        <option value="3650">Panel Solar TOPCon 580W - L. 3,650</option>
+                                        <option value="98200">Inversor Híbrido 15 kW - L. 98,200</option>
+                                        <option value="46900">Arrancador Suave 75 HP - L. 46,900</option>
+                                        <option value="285000">Transformador 150 kVA - L. 285,000</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="ciudad" class="form-label fw-semibold">Ciudad de entrega y flete</label>
+                                    <select id="ciudad" name="ciudad" required class="form-select form-select-lg">
+                                        <option value="">Elija una opción</option>
+                                        <option value="500">San Pedro Sula - Flete: L. 500</option>
+                                        <option value="1200">Tegucigalpa - Flete: L. 1,200</option>
+                                        <option value="2000">Otras regiones - Flete: L. 2,000</option>
+                                    </select>
+                                </div>
+
+                                <div class="alert alert-primary mb-4" role="alert">
+                                    <h3 class="h5 fw-bold"><i class="bi bi-tag-fill me-2"></i>¡Descuento comercial!</h3>
+                                    <p class="mb-0">Ofrecemos un descuento automático del <strong>8%</strong> en órdenes de 5 o más unidades.</p>
+                                </div>
+
+                                <button type="button" class="btn btn-primary btn-lg w-100"><i class="bi bi-calculator me-2"></i>Calcular presupuesto</button>
+                            </fieldset>
+                        </form>
                     </div>
 
-                    <div>
-                        <label for="equipo">Equipo Industrial</label>
-                        <select id="equipo" name="equipo" required>
-                            <option value="">Elija el equipo</option>
-                            <option value="3650">Panel Solar TOPCon 580W - L. 3650</option>
-                            <option value="98200">Inversor Híbrido 15 kW - L. 98200</option>
-                            <option value="46900">Arrancador Suave 75 HP - L. 46900</option>
-                            <option value="285000">Transformador 150 kVA - L. 285000</option>
-                        </select>
+                    <div class="col-12 col-lg-5">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-primary text-white p-3">
+                                <h3 class="h4 fw-bold mb-0"><i class="bi bi-receipt me-2"></i>Resultado de su cotización</h3>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="bg-light border rounded-4 text-center p-4">
+                                    <p class="mb-2">El total estimado de su cotización es:</p>
+                                    <p class="fs-2 fw-bold text-success mb-0">L. 5,000.00</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="ciudad">Ciudad de entrega y Flete</label>
-                        <select id="cuidad" name="cuidad" required>
-                            <option value="">Elija una opcion</option>
-                            <option value="500">San Pedro Sula - Flete: L. 500</option>
-                            <option value="1200">Tegucigalpa - Flete: L. 1200</option>
-                            <option value="2000">Otras Regiones - Flete: L. 2000</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <p><strong>¡DESCUENTO COMERCIAL!</strong></p>
-                        <p>Ofrecemos un descuento comercial del 8% en ordenes de 5 o más unidades </p>
-                    </div>
-                </fieldset>
-
-                <button type="button">Calcular presupuesto</button>
-
-            </form>
-
-            <div>
-                <h3>Resultado de su cotizacion</h3>
-                <p>El totl de su cotización es de :<strong>L. 5000</strong></p>
+                </div>
             </div>
-
         </section>
 
         <!--seccion5 tabla-->
-        <section id="tabla">
-            
-            <h2>TABLA COMPARATIVA de Especificaciones Técnicas</h2>
-            <p>Aqui puede comparar las caracterisitcas de los producto insignia de nuestra empresa</p>
+        <section id="tabla" class="py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="display-6 fw-bold">TABLA COMPARATIVA de Especificaciones Técnicas</h2>
+                    <p class="text-secondary">Aqui puede comparar las caracterisitcas de los producto insignia de nuestra empresa</p>
+                </div>
+            </div>
+            <div class="table-responsive shadow-sm rounded">
+                <table class="table table-striped table-hover table-bordered align-middle mb-0">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col">Codigo</th>
+                            <th scope="col">Equipo Indutrial</th>
+                            <th scope="col">Tension Nominal</th>
+                            <th scope="col">Capacidad</th>
+                            <th scope="col">Norma Tecnica</th>
+                            <th scope="col">Estado de Homologacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0002</td>
+                            <td>Panel solar TOPCon</td>
+                            <td>42 V</td>
+                            <td>580 W</td>
+                            <td><span class="badge text-bg-secondary">IEC</span></td>
+                            <td><span class="badge text-bg-warning">En revisión</span></td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>Inversor híbrido</td>
+                            <td>240 V</td>
+                            <td>15 kW</td>
+                            <td><span class="badge text-bg-info">UL</span></td>
+                            <td><span class="badge text-bg-success">Homologado</span></td>
+                        </tr>
+                        <tr>
+                            <td>0004</td>
+                            <td>Arrancador suave</td>
+                            <td>480 V</td>
+                            <td>75 HP</td>
+                            <td><span class="badge text-bg-primary">IEEE</span></td>
+                            <td><span class="badge text-bg-danger">No homologado</span></td>
+                        </tr>
+                        <tr>
+                            <td>0005</td>
+                            <td>Cable de cobre 4/0 AWG</td>
+                            <td>600 V</td>
+                            <td>4/0 AWG</td>
+                            <td><span class="badge text-bg-info">UL</span></td>
+                            <td><span class="badge text-bg-warning">En revisión</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Equipo Indutrial</th>
-                        <th scope="col">Tension Nominal</th>
-                        <th scope="col">Capacidad</th>
-                        <th scope="col">Norma Tecnica</th>
-                        <th scope="col">Estado de Homologacion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0001</td>
-                        <td>Articulo1</td>
-                        <td>120v</td>
-                        <td>120</td>
-                        <td>IEEE</td>
-                        <td>EStdo1</td>
-                    </tr>
-                    <tr>
-                        <td>0002</td>
-                        <td>Articulo2</td>
-                        <td>120v</td>
-                        <td>120</td>
-                        <td>IEEE</td>
-                        <td>EStado2</td>
-                    </tr>
-                    <tr>
-                        <td>0003</td>
-                        <td>Articulo3</td>
-                        <td>120v</td>
-                        <td>120</td>
-                        <td>IEEE</td>
-                        <td>EStdo1</td>
-                    </tr>
-                    <tr>
-                        <td>0004</td>
-                        <td>Articulo4</td>
-                        <td>120v</td>
-                        <td>120</td>
-                        <td>IEEE</td>
-                        <td>EStdo1</td>
-                    </tr>
-                    <tr>
-                        <td>0005</td>
-                        <td>Articulo5</td>
-                        <td>120v</td>
-                        <td>120</td>
-                        <td>IEEE</td>
-                        <td>EStdo1</td>
-                    </tr>
-                </tbody>
-            </table>
+            
         </section>
         
         <!--seccion6 requisitos y licitacion-->
-        <section id="licitacion">
-            <h2>REQUISITOS Y LICITACIÓN B2B</h2>
-            <p>Complete la siguiente informcion para solicitar una cotizacion formal o crédito corporativo</p>
+        <section id="licitacion" class="container my-5">
+            <h2 class="mb-5">REQUISITOS Y LICITACIÓN B2B</h2>
+            <p class="mb-4">Complete la siguiente informcion para solicitar una cotizacion formal o crédito corporativo</p>
 
             <form method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <legend>1-Datos del Solicitante</legend>
+                <fieldset >
+                    <legend class="float-none w-auto px-2">1-Datos del Solicitante</legend>
 
-                    <div>
-                        <label for="empresa">Nombre de la Empresa o Contratista Solicitante:</label>
-                        <input id="empresa" name="empresa" type="text" minlength="5" required placeholder="ej. empresa honduras">
+                    <div class="mb-3">
+                        <label  class="form-label" for="empresa">Nombre de la Empresa o Contratista Solicitante:</label>
+                        <input class="form-control" id="empresa" name="empresa" type="text" minlength="5" required placeholder="ej. empresa honduras">
                     </div>
 
-                    <div>
-                        <label for="rtn">RTN de la Entidad:</label>
-                        <input type="text" id="rtn" name="rtn" minlength="14" maxlength="14" pattern="[0-9]{14}" required placeholder="sin guiones ej: 12345678901234">
+                    <div  class="mb-3">
+                        <label class="form-label" for="rtn">RTN de la Entidad:</label>
+                        <input class="form-control" type="text" id="rtn" name="rtn" minlength="14" maxlength="14" pattern="[0-9]{14}" required placeholder="sin guiones ej: 12345678901234">
+                        <div class="form-text">
+                            Ingrese exactamente 14 dígitos numéricos, sin guiones.
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="correo">Correo Electronico de la Empresa:</label>
-                        <input type="email" id="correo" name="correo" required minlength="12"  placeholder="ej. ejemplo@gmail.com">
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electronico de la Empresa:</label>
+                        <input  class="form-control" type="email" id="correo" name="correo" required minlength="12"  placeholder="ej. ejemplo@gmail.com">
                     </div>
 
-                    <div>
-                        <label for="telefono">Telefono de Contacto:</label>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Telefono de Contacto:</label>
                         <input type="tel" id="telefono" name="telefono" required placeholder="ej. 98765432">
                     </div>
 
                 </fieldset>
-                <fieldset>
-                    <legend>Detalles de la Entrega</legend>
+                <fieldset class="border rounded p-3 mb-4">
+                    <legend class="float-none w-auto px-2">Detalles de la Entrega</legend>
 
-                    <div>
-                        <label for="departamento">Departamento de Entrega</label>
-                        <select id="departamento" name="departamento" required>
+                    <div class="mb-3">
+                        <label for="departamento" class="form-label">Departamento de Entrega</label>
+                        <select class="form-select" id="departamento" name="departamento" required>
                             <option value="">Seleccione el departamento</option>
                             <option value="cortes">Cortés</option>
                             <option value="fm">Francisco Morazán</option>
@@ -263,45 +716,54 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Terminos y condiciones</legend>
-                    <div>
-                        <input type="checkbox" id="terminos" name="terminos" required>
-                        <label for="terminos">He leído y acepto los terminos de garntía tecnica y de cotizacionión</label>
+                <fieldset class="border rounded p-3 mb-4">
+                    <legend class="float-none w-auto px-2">Terminos y condiciones</legend>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+                        <label class="form-check-label" for="terminos">He leído y acepto los terminos de garntía tecnica y de cotizacionión</label>
                     </div>
                 </fieldset>
-                <button type="submit">Enviar Cotización</button>
-                <button type="reset">Limpiar formulario</button>
+                <button type="submit"><i class="bi bi-send"></i>Enviar Cotización</button>
+                <button type="reset"><i class="bi bi-eraser"></i>Limpiar formulario</button>
 
             </form>
 
         </section>
 
-        <!--seccion1 catalogo de productos-->
-         <section id="contacto">
-            <img src="imagenes/logodeinsa.jpg" alt="Logo de la compañia" width="600">
-        </section>
-        
-
-
     </main>
     <footer>
-        <div>
-            <h2>&copy;DEINSA HONDURAS todos los derechos reservados</h2>
-            <p><strong>Entidad</strong>DEINSA HONDURAS</p>
-            <p><strong>Direccion</strong>Bouleard Suyapa, Tegucigalpa, M.D.C., Francisco Morazán</p>
-            <p><strong>Tel:</strong>+504 2222-2220 & +504 2223-2221</p>
-        </div>
-        <div name="redes sociales">
-            <h2>REDES SOCIALES</h2>
-            <p>Siguenos en nuestras redes sociales</p>
-            <ul>
-                <li><a href="facebook">Facebook</a></li>
-                <li><a href="instagram">Instagram</a></li>
-                <li><a href="LinkedIn">LinkedIn</a></li>
-            </ul>
-            
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>DEINSA HONDURAS</h2>
+                    <p>Distribuidora de suministros electronicos industriales y soluciones para proyectos.</p>
+                    <p>Nuestro compromiso es brindarle la mejor alternativa a nuestro cliente</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>Contactanos</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-4"><i class="bi bi-geo-alt-fill"></i>3ª Avenida S.E., entre 27 y 31 Calle, Zona Industrial, San Pedro Sula.</li>
+                        <li class="mb-4"><i class="bi bi-telephone-fill"></i>+504 2556-7325 / +504 2556-9673</li>
+                        <li class="mb-4"><i class="bi bi-clock-fill"></i>Lunes a viernes, 8am-6pm / Sabados 8am-12pm</li>
+                    </ul>
+                </div>
+                <div name="redes sociales" class="col-12 col-md-6 col-lg-4">
+                    <h2>REDES SOCIALES</h2>
+                    <p>Siguenos en nuestras redes sociales</p>
+                    <ul class="list-group">
+                        <li><a href="https://www.facebook.com/distribuidoraindustrial.net/"><i class="bi bi-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/distribuidoraindustrialsa/"><i class="bi bi-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/distribuidora-industrial-s-a-de-c-v/home/"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="text-center">
+                    <p class="mb-0">&copy;2026 DEINSA HONDURAS. Todos los derechos reservdos</p>
+                </div>
+
+
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
