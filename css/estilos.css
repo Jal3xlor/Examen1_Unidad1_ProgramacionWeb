@@ -85,22 +85,3 @@
     border-color: #0d6efd;
     box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
 }
-
-#cotizaciones .alert {
-    border-radius: 12px;
-}
-
-.resultado-total {
-    background-color: #edf4fc;
-}
-
-.total-precio {
-    color: #087f5b;
-    font-size: clamp(1.8rem, 4vw, 2.7rem);
-    font-weight: 800;
-    overflow-wrap: anywhere;
-}
-
-#cotizaciones button {
-    font-weight: 600;
-}
